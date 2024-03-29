@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/forms_1/images/bg.jpg" type="image/x-icon">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: auto;
+        
+        }
+        .container{
+            display: block;
+            width: 700px;
+            margin: auto;
+            /* border: 3px solid black; */
+            padding: 10px;
+            height: 650px;
+        }
+        .heads{
+            font-weight: normal !important ; 
+            /* font-size: 50px; */
+            background-color: aquamarine;
+            display: block;
+            width: 500px;
+            margin: auto;
+            text-align: right;
+        }
+        #mainh1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0px;
+        }
+        #sub1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        .input{
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 20px;
+            margin-left: 36px;
+        }
+        .req{
+            color: red;
+            /* display: inline; */
+        }
+        .box{
+            margin: 0px 0px ;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .label{
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #submit{
+            padding: 3px;
+            display: block;
+            margin: 20px 240.802px;
+            /* margin: auto; */
+        }
+        #address{
+            width: 300px;
+            height: 40px;
+            padding: 0px;
+        }
+        #feedback{
+            width: 500px;
+            height: 100px;
+        }
+        #submit{
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgb(128, 255, 255);
+        }
+        #submit:hover{
+            background-color: rgb(176, 216, 216);
+            cursor: pointer;
+        }
+        .all{
+            /* background-color: rgb(243, 255, 255); */
+            background-image: url(/forms_1/images/bg1.jpg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="heads">
+                <h1 id="mainh1">fill the required information</h1>
+                <h3 id="sub1">contact host for any issues</h3>
+            </div>
+            <div class="input">
+                <form action="#">
+                    <label class="label" for="firstname">full name<span class="req">* </span></label>
+                    <input class="box" type="text" required name="name" id="firstname" placeholder="first name*">
+                    <input type="text" name="name" id="middlename" class="box" placeholder="middle name">
+                    <input class="box" type="text" name="name" id="lastname" required placeholder="lastname*">
+                    <label for="email" class="label">Email<span class="req">* </span></label>
+                    <input type="text" name="mail" id="email" class="box" required placeholder="enter your mail id">
+                    <label for="phno" class="label">Mobile Number<span class="req">*</span></label>
+                    <input type="text" name="phno" id="phno" class="box" placeholder="ph. no">
+                    <label for="address" class="label">Address<span class="req">*</span></label>
+                    <input type="text" class="box" name="address" id="address"  required placeholder="Address">
+                    <label for="feedback" class="label">Feedback</label>
+                    <input type="text" name="feedback" id="feedback" class="box">
+                    <input class="btn" type="submit" value="          SUBMIT          " id="submit"> 
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
